@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yadav Doodh Dairy Pro | दूध संग्रह केंद्र</title>
+<style>
+:root{
+ --site-primary:#176b4d;
+ --site-on-primary:#ffffff;
+ --site-secondary:#f0b84b;
+ --site-on-secondary:#202a23;
+ --site-background:#f7f8f3;
+ --site-on-background:#18231d;
+ --site-font-body:system-ui,-apple-system,"Noto Sans Devanagari",sans-serif;
+ --site-font-heading:system-ui,-apple-system,"Noto Sans Devanagari",sans-serif;
+ --site-heading-scale:1;
+ --site-spacing-scale:1;
+ --site-radius-scale:1;
+ color-scheme:light dark;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:var(--site-font-body);background:light-dark(#f7f8f3,#101713);color:light-dark(#18231d,#eef5ef);line-height:1.6}
+#app{background-color:var(--site-background);color:var(--site-on-background);min-height:100vh;border-radius:0}
+header{background:var(--site-primary);color:var(--site-on-primary);padding:calc(26px * var(--site-spacing-scale)) max(5vw,20px) calc(34px * var(--site-spacing-scale))}
+nav{display:flex;justify-content:space-between;align-items:center;gap:12px;max-width:1100px;margin:auto}
+.brand{font-weight:800;font-size:1.1rem;letter-spacing:.2px}
+nav a{color:var(--site-on-primary);text-decoration:none;font-weight:650}
+.hero{max-width:1100px;margin:34px auto 0;display:grid;grid-template-columns:1.15fr .85fr;gap:30px;align-items:center}
+.eyebrow{color:var(--site-secondary);font-weight:800;letter-spacing:1px;text-transform:uppercase;font-size:.8rem}
+h1{font-size:calc(clamp(2.1rem,5vw,3.7rem) * var(--site-heading-scale));line-height:1.12;margin:10px 0 16px}
+header p{max-width:590px;color:#e0eee5}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+.btn{display:inline-block;border:0;border-radius:calc(12px * var(--site-radius-scale));padding:12px 17px;font:inherit;font-weight:750;text-decoration:none;cursor:pointer}
+.btn.primary{background:var(--site-secondary);color:var(--site-on-secondary)}
+.btn.ghost{border:1px solid #c8ddd0;color:var(--site-on-primary)}
+.milk-visual{background:var(--site-secondary);color:#243328;border-radius:28px;padding:26px;min-height:245px;display:flex;flex-direction:column;justify-content:space-between}
+.milk-visual .emoji{font-size:4rem}
+.milk-visual strong{font-size:1.35rem;line-height:1.3}
+main{max-width:1100px;margin:auto;padding:36px max(5vw,20px) 54px}
+.section-title{font-size:calc(1.8rem * var(--site-heading-scale));margin:0 0 8px}
+.muted{color:light-dark(#526157,#c0ccc3)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:22px 0 38px}
+.card{background:light-dark(#ffffff,#1a241e);border:1px solid light-dark(#e0e7df,#34443a);border-radius:calc(18px * var(--site-radius-scale));padding:22px}
+.card .icon{font-size:1.8rem}
+.card h3{margin:8px 0 6px}
+.panel{background:var(--site-primary);color:var(--site-on-primary);border-radius:calc(22px * var(--site-radius-scale));padding:26px;display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:center}
+.panel h2{margin:0 0 8px;font-size:calc(1.7rem * var(--site-heading-scale))}
+form{display:grid;gap:10px}
+input,textarea,select{width:100%;padding:12px;border-radius:10px;border:1px solid #b9c9bd;font:inherit;background:light-dark(#fff,#202c24);color:light-dark(#17231b,#f4f7f4)}
+footer{padding:22px 5vw;text-align:center;background:light-dark(#e8eee6,#151e18);font-size:.92rem}
+.notice{font-size:.88rem;opacity:.86}
+@media(max-width:700px){.hero,.panel{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.hero{margin-top:24px}.milk-visual{min-height:190px}nav{align-items:flex-start}.navlinks{display:flex;gap:12px;flex-wrap:wrap;justify-content:flex-end}}
+</style>
+</head>
+<body>
+<div id="app">
+<header>
+ <nav>
+  <div class="brand">🥛 Yadav Doodh Dairy Pro</div>
+  <div class="navlinks"><a href="#services">सेवाएँ</a> <a href="#contact">संपर्क</a></div>
+ </nav>
+ <div class="hero">
+  <div>
+   <div class="eyebrow">विश्वास • गुणवत्ता • समय पर सेवा</div>
+   <h1>ताज़ा दूध, भरोसे के साथ</h1>
+   <p>हमारा दूध संग्रह केंद्र किसानों से दूध एकत्र करने, गुणवत्ता का रिकॉर्ड रखने और ग्राहकों तक भरोसेमंद सेवा पहुँचाने के लिए समर्पित है।</p>
+   <div class="actions">
+    <a class="btn primary" href="#contact">संपर्क करें</a>
+    <a class="btn ghost" href="#services">हमारी सेवाएँ</a>
+   </div>
+  </div>
+  <div class="milk-visual">
+   <div class="emoji">🥛🐄</div>
+   <strong>किसानों और ग्राहकों के लिए<br>एक भरोसेमंद डेयरी साथी</strong>
+   <span>दूध संग्रह • गुणवत्ता रिकॉर्ड • स्थानीय सेवा</span>
+  </div>
+ </div>
+</header>
+<main>
+ <section id="services">
+  <h2 class="section-title">हमारी सेवाएँ</h2>
+  <p class="muted">अपने डेयरी कारोबार की मुख्य सेवाएँ यहाँ दिखाएँ।</p>
+  <div class="cards">
+   <article class="card"><div class="icon">🐄</div><h3>दूध संग्रह</h3><p class="muted">स्थानीय दूध उत्पादकों से नियमित संग्रह और मात्रा का स्पष्ट रिकॉर्ड।</p></article>
+   <article class="card"><div class="icon">🧪</div><h3>गुणवत्ता जाँच</h3><p class="muted">कंपनी की प्रक्रिया के अनुसार Fat/SNF और दूध की गुणवत्ता का रिकॉर्ड।</p></article>
+   <article class="card"><div class="icon">📒</div><h3>साफ हिसाब-किताब</h3><p class="muted">दूध की मात्रा, भुगतान और लेन-देन का व्यवस्थित हिसाब।</p></article>
+  </div>
+ </section>
+ <section class="panel" id="contact">
+  <div>
+   <h2>डेयरी से संपर्क करें</h2>
+   <p>यहाँ संचालक: गंगा प्रसाद यादव। दूध कलेक्शन और डेयरी सेवाओं के लिए संपर्क करें।</p>
+   <p><strong>संचालक:</strong> गंगा प्रसाद यादव</p><p><strong>फोन:</strong> <a style="color:inherit" href="tel:9023243907">9023243907</a> · <a style="color:inherit" href="tel:7990825586">7990825586</a></p>
+   <p><strong>पता:</strong> उरदी, कटरा बाजार, गोंडा, उत्तर प्रदेश</p>
+   <p class="notice">प्रकाशित करने से पहले संपर्क जानकारी और सेवाओं को सही कर लें।</p>
+  </div>
+  <form id="contactForm">
+   <label>आपका नाम<input name="name" required placeholder="अपना नाम"></label>
+   <label>मोबाइल नंबर<input name="phone" inputmode="tel" required placeholder="10 अंकों का नंबर"></label>
+   <label>आपका संदेश<textarea name="message" rows="3" placeholder="आपको किस सेवा की जानकारी चाहिए?"></textarea></label>
+   <button class="btn primary" type="submit">संदेश तैयार करें</button>
+   <p class="notice" id="formNote" aria-live="polite">यह डेमो फॉर्म है; यह अपने आप संदेश भेजता नहीं है।</p>
+  </form>
+ </section>
+</main>
+<footer>© <span id="year"></span> Yadav Doodh Dairy Pro • भरोसेमंद स्थानीय सेवा</footer>
+</div>
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+document.getElementById('contactForm').addEventListener('submit', function(e){
+ e.preventDefault();
+ const data = new FormData(this);
+ const summary = `नाम: ${data.get('name')}\nमोबाइल: ${data.get('phone')}\nसंदेश: ${data.get('message') || 'कोई संदेश नहीं'}`;
+ const note = document.getElementById('formNote');
+ note.textContent = 'संदेश का मसौदा तैयार है। इसे कॉपी करके अपनी डेयरी के WhatsApp पर भेजें:\n' + summary;
+});
+</script>
+</body>
+</html>
